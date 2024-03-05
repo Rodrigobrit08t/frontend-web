@@ -1,0 +1,33 @@
+h1{
+    color: #629150;
+}
+
+h2{
+    color: #1595c4;
+}
+
+div{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    background: #b32e2e;
+    /*overflow: hidden;*/
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.logo{
+    width: 200px;
+    height: 100px;
+    background: #2e42b3;
+    /*margin: 0 0 0 30px;*/
+}
+
+#menu{
+    width: 500px;
+    height: 100px;
+    background: #2eb356;
+    
+}
