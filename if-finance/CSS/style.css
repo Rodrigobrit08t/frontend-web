@@ -1,13 +1,13 @@
 html, body{
     margin: 0;
     padding: 0;
-    background: #121212;
-    color: #FFF;
+    background: #03071e;
+    color: #eee;
 }
 
 body > header{
 	height: 70px;
-    background: #000;
+    background: #370617;
     padding: 0 16px;
     display: flex;
 	align-items: center;
@@ -61,7 +61,8 @@ body > main{
 }
 
 body > footer{
-	background: #000;
+	background: #370617;
+	color: #000;
 	height: 200px;
 	display: flex;
 	justify-content: center;
@@ -201,4 +202,52 @@ input[type=submit]:active, input[type=reset]:active{
 	background-repeat: no-repeat;
 }
 
+nav div{
+	display: none;
+}
 
+/*
+@media only screen and (max-width: 674px) {
+	nav ul {
+		display: none;
+	}
+
+	nav div {
+		display: block;
+	}
+  }
+
+  @media only screen and (max-width: 568px) {
+	body > main {
+		justify-content: center;
+	}
+  }
+
+  @media only screen and (max-width: 334px) {
+	.card-ticker {
+		width: 100%;
+	}
+  }
+*/
+
+@media (width <= 674px) {
+	nav ul {
+		display: none;
+	}
+
+	nav div {
+		display: block;
+	}
+  }
+
+  @media (width <= 568px) {
+	body > main {
+		justify-content: center;
+	}
+  }
+
+  @media (width <= 334px) {
+	.card-ticker {
+		width: 100%;
+	}
+  }
