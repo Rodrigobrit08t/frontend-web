@@ -144,7 +144,7 @@ table{
 
 table th, table td{
 	border: 1px solid #7b7b7b;
-	/*text-align: center;*/
+	text-align: left;
 	padding: 8px;
 }
 
@@ -163,6 +163,10 @@ fieldset{
 	padding: 30px;
 	border-radius: 15px;
 	margin-bottom: 30px;
+}
+
+fieldset h5{
+	font-size: 1.1rem;	
 }
 
 legend{
@@ -206,29 +210,48 @@ nav div{
 	display: none;
 }
 
-/*
-@media only screen and (max-width: 674px) {
-	nav ul {
-		display: none;
-	}
+button {
+	background: #ff5900;
+	color: #FFF;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+}
 
-	nav div {
-		display: block;
-	}
-  }
+#add-card-modal {
+	position: absolute;
+	background: #000000e1;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
 
-  @media only screen and (max-width: 568px) {
-	body > main {
-		justify-content: center;
-	}
-  }
+#add-card-modal main{
+	width: 300px;
+	background: #141414;
+	border-radius: 15px;
+	padding: 20px;
+	color: #ffffff;
+}
 
-  @media only screen and (max-width: 334px) {
-	.card-ticker {
-		width: 100%;
-	}
-  }
-*/
+#add-card-modal main h2{
+	margin: 0;
+}
+
+#add-card-modal main form{
+	margin: 20px 0 0 0;
+	display: flex;
+	flex-direction: column;
+}
+
+#add-card-modal main form button{
+	margin: 20px 0 0 0;
+}
 
 @media (width <= 674px) {
 	nav ul {
