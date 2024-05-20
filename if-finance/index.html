@@ -53,6 +53,18 @@
             </form>
         </main>
     </div>
+    <div id="add-api-modal" class="modal" onclick="closeModal(event)">
+		<main>
+			<h2>Add API Ticker</h2>
+			<form onsubmit="createApiCard(event)">
+				<label for="codigo">Código:</label>
+				<input type="text" name="codigo" id="codigo">
+				<label for="nAcoes">Número de Ações:</label>
+				<input type="text" name="nAcoes" id="nAcoes">
+				<button>Add Card</button>
+			</form>
+		</main>
+	</div>
 </body>
 
 </html>
