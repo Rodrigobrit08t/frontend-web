@@ -78,6 +78,26 @@ body > footer{
 	align-self: baseline;
 }
 
+.card-menu{
+	display: none;
+	position: absolute;
+	background: #000000bd;
+	backdrop-filter: blur(10px);
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	border-radius: 20px;
+	justify-content: center;
+	align-items: center;
+	gap: 10px
+}
+
+.card-menu span{
+	cursor: pointer;
+	padding: 20px;
+}
+
 .card-ticker header{
 	display: flex;
 	justify-content: space-between;
@@ -180,13 +200,19 @@ input[type=text], input[type=email], input[type=password], select, textarea {
 	margin-bottom: 12px;
 	border: none;
 	background-color: #CCC;
-	color: #000000
+	color: #000000;
+	border-radius: 10px;
 }
 
 input[type=submit], input[type=reset]{
-	border: none;
-	margin: 16px 0px;
-	cursor: pointer;
+	border: 1px solid #ac3c00;
+	color: #FFF;
+	border-radius: 30px;
+	padding: 10px 20px;
+	background: #ac3c00;
+	font-size: 1.1rem;
+	margin: 16px 16px 16px 0;
+	cursor: pointer; 
 }
 
 input[type=submit]:hover, input[type=reset]:hover{
@@ -257,20 +283,19 @@ button {
 	nav ul {
 		display: none;
 	}
-
 	nav div {
 		display: block;
 	}
-  }
+}
 
-  @media (width <= 568px) {
+@media (width <= 568px) {
 	body > main {
 		justify-content: center;
 	}
-  }
+}
 
-  @media (width <= 334px) {
+@media (width <= 334px) {
 	.card-ticker {
 		width: 100%;
 	}
-  }
+}
